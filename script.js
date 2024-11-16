@@ -121,14 +121,3 @@ function getGrandTotalPrice(parameter){
 
 
 
-// admin 
-const handleClick = ()=>{
-    console.log('hello');
-}
-
-const passengerNameField = document.getElementById('passenger-name');
-passengerNameField.addEventListener('keyup', function(e){
-    console.log(e.target.value);
-})
-const passengerName = passengerNameField.value;
-console.log(passengerName);
