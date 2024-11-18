@@ -1,0 +1,4 @@
+{ // autosave korer obbas tai kheyal thake na save korte tai ato plm hoitace
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000
+}

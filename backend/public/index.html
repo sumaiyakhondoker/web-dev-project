@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E Ticket</title>
+    <!-- favicon -->
+    <!-- <link rel="icon" href="../public/images/favicon.png" type="image/png"> -->
+    <!-- <link rel="icon" href="../public/images/favicon.png" sizes="32x32" type="image/png"> -->
+
 
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/a9d03710c7.js" crossorigin="anonymous"></script>
@@ -397,9 +401,9 @@
 
                   <!-- seat details lower part -->
                   <div >
-                    <h4 class="pt-3 lg:pt-6 pb-1 lg:pb-2 font-semibold">Passenger Name*</h4>
+                    <h4 class="pt-3 lg:pt-6 pb-1 lg:pb-2 font-semibold">Passenger Name</h4>
                     <input id="passenger-name" type="text" placeholder="Enter your name" required class="input input-bordered w-full" />
-                    <h4 class="pt-3 lg:pt-6 pb-1 lg:pb-2 font-semibold">Phone Number*</h4>
+                    <h4 class="pt-3 lg:pt-6 pb-1 lg:pb-2 font-semibold">Phone Number</h4>
                     <input  id="passenger-phone" type="number" placeholder="Enter your phone number" required class="input input-bordered w-full" />
                     <h4 class="pt-3 lg:pt-6 pb-1 lg:pb-2 font-semibold">Email ID</h4>
                     <input id="passenger-email" type="email" placeholder="Enter your email id" class="input input-bordered w-full" /><br>
@@ -431,6 +435,20 @@
     </div>
   </div>
 </dialog>
+
+<!-- ===================== -->
+<dialog id="my_modal_3" class="modal">
+  <div class="modal-box">
+    <form method="dialog">
+      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+    </form>
+    <h3 class="text-lg font-bold">Incomplete Form Submission!</h3>
+    <p class="py-4">Please fill in all the fields before submitting the form.</p>
+  </div>
+</dialog>
+
+
+<!-- ============ -->
 
 <div class="flex flex-col text-center  lg:flex-row  gap-4 text-color-gray  underline underline-offset-4">
   <a href="#">Terms and Conditions</a>

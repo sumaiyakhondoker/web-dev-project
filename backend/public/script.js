@@ -127,13 +127,16 @@ const emailId = document.getElementById('passenger-email')
 
 
 const submitHandler = (e) => {
-    if(!passengerName.value || !phoneNumber.value || !emailId.value) return alert("please fill up all field");
-    const data = ({passengerName:passengerName.value, phoneNumber:phoneNumber.value,emailId:emailId.value})
-fetch("http://localhost:3000",{
+    if(!passengerName.value || !phoneNumber.value || !emailId.value) return my_modal_3.showModal();
+    
+    const data = ({name:passengerName.value, phone:phoneNumber.value,email:emailId.value})
+    fetch("http://localhost:3000/register",{
     method: "POST",
-    body: JSON.stringify(data)
+    body: JSON.stringify(data),
+    headers: {
+        "Content-Type": "application/json",
+      },
 })
-fetch("http://localhost:3000/")
 
     my_modal_5.showModal()
 }
